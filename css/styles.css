@@ -132,9 +132,9 @@ footer p{
     }
     input[type=text] {
         border-bottom: 5px solid #2E8182;
-        font-size: 30px;
+        font-size: 100%;
         width: 75%;
-        height: 50px;
+        height: 100%;
     }
     input[type=text]:focus {
         border-bottom: 5px solid #2bb6b8;
