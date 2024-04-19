@@ -112,23 +112,23 @@ footer p{
         border-radius: 20px;
       }
     label{
-        font-size: 30px;
+        font-size: 100%;
     }
     input[type=radio]{
-        width: 30px;
-        height: 30px;
+        width: 15px;
+        height: 15px;
     }
     input[type=radio]:checked {
-        width: 30px;
-        height: 30px;
+        width: 15px;
+        height: 15px;
     }
     input[type=checkbox]{
-        width: 30px;
-        height: 30px;
+        width: 15px;
+        height: 15px;
     }
     input[type=checkbox]:checked {
-        width: 30px;
-        height: 30px;
+        width: 15px;
+        height: 15px;
     }
     input[type=text] {
         border-bottom: 5px solid #2E8182;
@@ -141,7 +141,6 @@ footer p{
         background-color: #252525;
     }
     input[type=button], input[type=submit], input[type=reset] {
-        height: 100px;
         width: 75%;
         font-size: 30px;
       }
