@@ -1,0 +1,41 @@
+html {
+    height: 100%;
+  }
+  
+  body {
+    font-family: poppinsmedium;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    color: #d1d1d1;
+    background-color: #1d1d1d;
+    font-size: larger;
+  }
+  
+  .page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .page p {
+    margin-top: 20px;
+  }
+  
+  .page.get-page {
+    height: 99vh;
+  }
+  
+  .page.get-page .inside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
