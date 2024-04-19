@@ -132,6 +132,7 @@ footer p{
     }
     input[type=text] {
         border-bottom: 5px solid #2E8182;
+        font-size: 30px;
         width: 75%;
         height: 50px;
     }
