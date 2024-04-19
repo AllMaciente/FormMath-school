@@ -143,6 +143,7 @@ footer p{
     input[type=button], input[type=submit], input[type=reset] {
         width: 75%;
         font-size: 30px;
+        
       }
     #bt{
         display: flex;
