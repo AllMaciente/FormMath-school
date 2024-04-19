@@ -8,6 +8,14 @@ header{
     /* align-items: ; */
     justify-content: space-between;
 }
+form {
+    color: #d1d1d1;
+    width: 75%;
+    padding: 20px;
+    border: 5px solid #2E8182;
+    border-radius: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
 div.title{
     flex-direction: row;
     line-height: 10px;
@@ -68,15 +76,8 @@ input[type=checkbox]:checked {
     width: 15px;
     height: 15px;
 }
-form {
-    color: #d1d1d1;
-    width: 75%;
-    padding: 20px;
-    border: 5px solid #2E8182;
-    border-radius: 5%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  input[type=button], input[type=submit], input[type=reset] {
+
+input[type=button], input[type=submit], input[type=reset] {
     border-radius: 20px;
     background-color: #2E8182;
     border: none;
@@ -88,12 +89,64 @@ form {
     cursor: pointer;
     width: 30%;
   }
-  input[type=text] {
+input[type=text] {
     border: none;
     color: #d1d1d1;
     background-color: #1d1d1d;
     border-bottom: 2px solid #2E8182;
   }
-  input[type=text]:focus {
+input[type=text]:focus {
     background-color: #252525;
   }
+
+footer p{
+    color: #d1d1d1;
+    font-family: poppinslight;
+    font-size: smaller;
+}
+
+  @media(orientation: portrait) {
+    form {
+        width: 90%;
+        border: 1px solid #2E8182;
+        border-radius: 20px;
+      }
+    label{
+        font-size: 30px;
+    }
+    input[type=radio]{
+        width: 30px;
+        height: 30px;
+    }
+    input[type=radio]:checked {
+        width: 30px;
+        height: 30px;
+    }
+    input[type=checkbox]{
+        width: 30px;
+        height: 30px;
+    }
+    input[type=checkbox]:checked {
+        width: 30px;
+        height: 30px;
+    }
+    input[type=text] {
+        border-bottom: 5px solid #2E8182;
+        width: 75%;
+        height: 50px;
+    }
+    input[type=text]:focus {
+        border-bottom: 5px solid #2bb6b8;
+        background-color: #252525;
+    }
+    input[type=button], input[type=submit], input[type=reset] {
+        height: 100px;
+        width: 75%;
+        font-size: 30px;
+      }
+    #bt{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

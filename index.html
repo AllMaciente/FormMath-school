@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" media="screen">
 </head>
 <body onload="hideQuestion3()">
     <header>
@@ -85,8 +85,13 @@
             <input type="radio" id="regret2" name="7.arrependeu" value="N">
             <label for="regret2">Não</label><br>
         </div>
-        <input type="submit" value="Submit">
+        <div id="bt">
+            <input type="submit" value="Submit">
+        </div>
     </form>
+    <footer>
+        <p>By All</p>
+    </footer>
 </body>
 <script>
     function showQuestion3() {
