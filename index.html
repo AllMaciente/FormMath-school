@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/styles.css" media="screen">
 </head>
-<body onload="hideQuestion3()">
+<body>
     <header>
         <div class="title">
             <h2>Math</h2>
@@ -15,74 +15,72 @@
         </div>
     </header>
     <form action="https://api.sheetmonkey.io/form/ufm88VZZBX8gzoexkeurDz" method="post">
-        <h1>Impacto das Microtransações nos Jogos de Videogame</h1>
+        <h1>Avaliação sobre Bem Estar Físico e Mental</h1>
         
         <div id="question1" class="question">
-            <p>1. Qual é a sua idade?</p>
-            <input type="radio" id="age1" name="1.Idade" value="menos de 18">
-            <label for="age1">Menos de 18 anos</label><br>
-            <input type="radio" id="age2" name="1.Idade" value="18-24">
-            <label for="age2">18 a 24 anos</label><br>
-            <input type="radio" id="age3" name="1.Idade" value="25-34">
-            <label for="age3">25 a 34 anos</label><br>
-            <input type="radio" id="age4" name="1.Idade" value="35-44">
-            <label for="age4">35 a 44 anos</label><br>
-            <input type="radio" id="age5" name="1.Idade" value="Mais de 45">
-            <label for="age5">45 anos ou mais</label><br>
+            <label for="item5">1. Qual é a sua idade?:</label>
+            <input type="text" id="others" name="1.idade"><br>
         </div>
         <div id="question2" class="question">
-            <p>2. Você já realizou microtransações em jogos de videogame?</p>
-            <input type="radio" id="microtransaction1" name="2.microtransações" value="S" onclick="showQuestion3()">
-            <label for="microtransaction1">Sim</label><br>
-            <input type="radio" id="microtransaction2" name="2.microtransações" value="N" onclick="hideQuestion3()">
-            <label for="microtransaction2">Não</label><br>
+            <p>2. Como você avalia sua saúde geral?</p>
+            <input type="radio" id="microtransaction1" name="2." value="Excelente">
+            <label for="microtransaction1">Excelente</label><br>
+            <input type="radio" id="microtransaction2" name="2." value="Boa">
+            <label for="microtransaction2">Boa</label><br>
+            <input type="radio" id="microtransaction3" name="2." value="Regular">
+            <label for="microtransaction3">Boa</label><br>
+            <input type="radio" id="microtransaction4" name="2." value="Ruim">
+            <label for="microtransaction4">Ruim</label><br>
+            <input type="radio" id="microtransaction5" name="2." value="Muito ruim">
+            <label for="microtransaction5">Muito ruim</label><br>
         </div>
         <div id="question3" class="question" style="display: none;">
-          <p>3. Com que frequência você faz uso de microtransações em jogos de videogame?</p>
-          <input type="radio" id="frequency1" name="3.frequência" value="Raramente">
-          <label for="frequency1">Raramente (apenas ocasionalmente)</label><br>
-          <input type="radio" id="frequency2" name="3.frequência" value="Regularmente">
-          <label for="frequency2">Regularmente (algumas vezes por mês)</label><br>
-          <input type="radio" id="frequency3" name="3.frequência" value="Frequentemente">
-          <label for="frequency3">Frequentemente (semanalmente ou diariamente)</label><br>
+          <p>3. Com que frequência você pratica atividades físicas?</p>
+          <input type="radio" id="frequency1" name="3." value="Diariamente">
+          <label for="frequency1">Diariamente</label><br>
+          <input type="radio" id="frequency2" name="3." value="Algumas vezes por semana">
+          <label for="frequency2">Algumas vezes por semana (algumas vezes por mês)</label><br>
+          <input type="radio" id="frequency3" name="3." value="Uma vez por semana">
+          <label for="frequency3">Uma vez por semana</label><br>
+          <input type="radio" id="frequency4" name="3." value="Raramente">
+          <label for="frequency4">Raramente</label><br>
+          <input type="radio" id="frequency5" name="3." value="Nunca">
+          <label for="frequency5">Nunca</label><br>
         </div>
         <div id="question4" class="question">
-            <p>4. Você acredita que as microtransações impactam positivamente ou negativamente na sua experiência de jogo?</p>
-            <input type="radio" id="impact1" name="4.impactam" value="positivo">
-            <label for="impact1">Impacto positivo (melhoram a experiência)</label><br>
-            <input type="radio" id="impact2" name="4.impactam" value="negativo">
-            <label for="impact2">Impacto negativo (prejudicam a experiência)</label><br>
-            <input type="radio" id="impact3" name="4.impactam" value="Neutro">
-            <label for="impact3">Neutro (não fazem diferença)</label><br>
+            <p>4.Você costuma ter uma alimentação balanceada?</p>
+            <input type="radio" id="impact1" name="4." value="Sim">
+            <label for="impact1">Sim, sempre</label><br>
+            <input type="radio" id="impact2" name="4." value="Às vezes">
+            <label for="impact2">Às vezes</label><br>
+            <input type="radio" id="impact3" name="4." value="raramente">
+            <label for="impact3">Não, raramente (não fazem diferença)</label><br>
+            <input type="radio" id="impact4" name="4." value=" Não">
+            <label for="impact4"> Não, nunca (não fazem diferença)</label><br>
         </div>
         <div id="question5" class="question">
-            <p>5. Você considera que a presença de microtransações influencia na escolha de jogos para jogar?</p>
-            <input type="radio" id="influence1" name="5.influencia" value="significativamente">
-            <label for="influence1">Sim, influencia significativamente</label><br>
-            <input type="radio" id="influence2" name="5.influencia" value="não decisivo">
-            <label for="influence2">Sim, mas não é o fator decisivo</label><br>
-            <input type="radio" id="influence3" name="5.influencia" value="não">
-            <label for="influence3">Não, não influencia minha escolha</label><br>
+            <p>5. Quantas horas de sono você costuma ter por noite?</p>
+            <input type="radio" id="influence1" name="5." value="< 6">
+            <label for="influence1">Menos de 6 horas</label><br>
+            <input type="radio" id="influence2" name="5." value="6-8">
+            <label for="influence2">6 a 8 horas</label><br>
+            <input type="radio" id="influence3" name="5." value="+8">
+            <label for="influence3">Mais de 8 horas</label><br>
         </div>
         <div id="question6" class="question">
-            <p>6. Quais tipos de itens ou vantagens você costuma adquirir por meio de microtransações? (Marque todas as opções que se aplicam)</p>
-            <input type="checkbox" id="item1" name="6.skins" value="s">
-            <label for="item1">Skins ou aparências para personagens</label><br>
-            <input type="checkbox" id="item2" name="6.progressão" value="s">
-            <label for="item2">Itens de progressão (XP, moedas, etc.)</label><br>
-            <input type="checkbox" id="item3" name="6.cosméticos" value="s">
-            <label for="item3">Itens cosméticos (roupas, acessórios, etc.)</label><br>
-            <input type="checkbox" id="item4" name="6.jogabilidade" value="s">
-            <label for="item4">Itens que afetam a jogabilidade (armas, veículos, etc.)</label><br>
-            <input type="checkbox" id="item5" name="6.Outros" value="nonUse">
-            <label for="item5">Outros (especifique):</label>
-            <input type="text" id="others" name="6.Outros"><br>
+            <p>6. Você se sente estressado(a) frequentemente?</p>
+            <input type="radio" id="item1" name="6." value="Sim">
+            <label for="item1">Sim</label><br>
+            <input type="radio" id="item2" name="6." value="Às vezes"">
+            <label for="item2">Às vezes</label><br>
+            <input type="radio" id="item3" name="6." value="Não">
+            <label for="item3">Não</label><br>
         </div>
         <div id="question7" class="question">
-            <p>7. Você já se arrependeu de realizar alguma microtransação em um jogo?</p>
-            <input type="radio" id="regret1" name="7.arrependeu" value="S">
+            <p>7. Você já procurou ajuda profissional para questões relacionadas à saúde mental?*</p>
+            <input type="radio" id="regret1" name="7." value="S">
             <label for="regret1">Sim</label><br>
-            <input type="radio" id="regret2" name="7.arrependeu" value="N">
+            <input type="radio" id="regret2" name="7." value="N">
             <label for="regret2">Não</label><br>
         </div>
         <div id="bt">
@@ -93,13 +91,4 @@
         <a href="https://github.com/AllMaciente"><p>By All</p></a>
     </footer>
 </body>
-<script>
-    function showQuestion3() {
-      document.getElementById('question3').style.display = 'block';
-    }
-    
-    function hideQuestion3() {
-      document.getElementById('question3').style.display = 'none';
-    }
-    </script>
 </html>
